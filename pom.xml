@@ -8,24 +8,28 @@
     <artifactId>spark-group-with-state</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <jdk.version>1.8</jdk.version>
+        <jdk.version>1.11</jdk.version>
         <jdk.encoding>utf-8</jdk.encoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <akka.version>2.5.21</akka.version>
-        <spark.version>2.4.2</spark.version>
-        <scala.version>2.11.12</scala.version>
+        <maven.compiler.source>1.11</maven.compiler.source>
+        <maven.compiler.target>1.11</maven.compiler.target>
+        <spark.version>3.0.0</spark.version>
+        <scala.version>2.12.10</scala.version>
         <jackson.version>2.9.9</jackson.version>
-        <scala.compat.version>2.11</scala.compat.version>
+        <scala.compat.version>2.12</scala.compat.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.11</maven.compiler.source>
+        <maven.compiler.target>1.11</maven.compiler.target>
     </properties>
     <dependencies>
         <dependency>
             <groupId>org.scala-lang</groupId>
             <artifactId>scala-library</artifactId>
             <version>${scala.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scalatest</groupId>
+            <artifactId>scalatest_${scala.compat.version}</artifactId>
+            <version>3.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.scala-lang</groupId>
@@ -47,6 +51,13 @@
             <artifactId>spark-streaming_${scala.compat.version}</artifactId>
             <version>${spark.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-sql-kafka-0-10 -->
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql-kafka-0-10_2.12</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
