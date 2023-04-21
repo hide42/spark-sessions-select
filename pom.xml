@@ -12,7 +12,7 @@
         <jdk.encoding>utf-8</jdk.encoding>
         <maven.compiler.source>1.11</maven.compiler.source>
         <maven.compiler.target>1.11</maven.compiler.target>
-        <spark.version>3.0.0</spark.version>
+        <spark.version>3.4.0</spark.version>
         <scala.version>2.12.10</scala.version>
         <jackson.version>2.9.9</jackson.version>
         <scala.compat.version>2.12</scala.compat.version>
